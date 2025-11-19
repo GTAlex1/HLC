@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horario</title>
+  <!-- <style>
+    table {
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      min-width: 80px;
+    }
+  </style>-->
+</head>
+<body>
+<table border="1" id="horario" summary="Mi horario" width="800" height="600">
+<caption><strong>Horario</strong></caption>
+  <tr align="center">
+    <th>Horas</th>
+    <th>Lunes</th>
+    <th>Martes</th>
+    <th>Miércoles</th>
+    <th>Jueves</th>
+    <th>Viernes</th>
+  </tr>
+  <tr align="center">
+    <td>8:15<br>9:15</td>
+    <td rowspan="2" bgcolor="#ff9999">Proyecto</td>
+    <td rowspan="2" bgcolor="#a0c4ff">Servicios</td>
+    <td bgcolor="#ffd6a5">Ipe II</td>
+    <td rowspan="3" bgcolor="#a0c4ff">Servicios</td>
+    <td rowspan="2" bgcolor="#bdb2ff">SOR</td>
+  </tr>
+  <tr align="center">
+    <td>9:15<br>10:15</td>
+    <td bgcolor="#caffbf">Seguridad</td>
+  </tr>
+  <tr align="center">
+    <td>10:15<br>11:15</td>
+    <td bgcolor="#ffd6a5">IPE II</td>
+    <td bgcolor="#ffadad">APWEB</td>
+    <td bgcolor="#fdffb6">HLC</td>
+    <td bgcolor="#a0c4ff">Servicios</td>
+  </tr>
+  <tr align="center">
+    <td>11:15<br>11:45</td>
+    <td colspan="5" bgcolor="#f54927">Recreo</td>
+  </tr>
+  <tr align="center">
+    <td>11:45<br>12:45</td>
+    <td bgcolor="#ffd6a5">IPE II</td>
+    <td bgcolor="#caffbf">Seguridad</td>
+    <td rowspan="2" bgcolor="#bdb2ff">SOR</td>
+    <td bgcolor="#caffbf">Seguridad</td>
+    <td bgcolor="#caffbf">Seguridad</td>
+  </tr>
+  <tr align="center">
+    <td>8:15<br>9:15</td>
+    <td rowspan="2" bgcolor="#9bf6ff">Inglés</td>
+    <td rowspan="2" bgcolor="#bdb2ff">SOR</td>
+    <td bgcolor="#ffc6ff">APLWEB</td>
+    <td bgcolor="#ffc6ff">APLWEB</td>
+  </tr>
+  <tr align="center">
+    <td>8:15<br>9:15</td>
+    <td bgcolor="#ffc6ff">APLWEB</td>
+    <td bgcolor="#fdffb6">HLC</td>
+    <td bgcolor="#fdffb6">HLC</td>
+  </tr>
+</table>
+
+<!--  <script>
+    const colores = {
+      "Proyecto": "#ff9999",
+      "Servicios": "#a0c4ff",
+      "Ipe II": "#ffd6a5",
+      "IPE II": "#ffd6a5",
+      "Seguridad": "#caffbf",
+      "SOR": "#bdb2ff",
+      "HLC": "#fdffb6",
+      "APWEB": "#ffadad",
+      "APLWEB": "#ffc6ff",
+      "Inglés": "#9bf6ff",
+      "Recreo": "#f54927"
+    };
+
+    document.querySelectorAll("#horario td").forEach(td => {
+      const texto = td.textContent.trim();
+      if (colores[texto]) {
+        td.style.backgroundColor = colores[texto];
+      }
+    });
+  </script> -->
+</body>
+</html>
