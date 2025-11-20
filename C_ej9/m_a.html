@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Álex</title>
+</head>
+<body>
+    <h1>Modelo avanzado</h1>
+    <hr>
+   <form>
+    <legend>Ingresa tus datos...</legend>
+        <label for="Tu nombre">1. Nombre completo:</label>
+        <input type="text" name="name" id="name" placeholder="Nombre...">
+        <br>
+        
+        <label for="Tu correo"">2. Correo electrónico:</label>
+        <input type="text" name="correo" id="correo" placeholder="Correo...">
+        <br>
+        
+        <label for="Tu contraseña">3. Contraseña:</label>
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña...">
+        <br>
+        
+        <label for="Tu correo">4. Fecha de nacimiento:</label>
+        <input type="date" name="f_naz" id="f_naz" placeholder="Fecha de nacimiento...">
+        <br>
+        
+        <label for="Tu género">5. Género:</label>
+        <input type="radio" name="genero" id="hombre" value="Hombre">
+        <label for="hombre">Hombre</label>
+
+        <input type="radio" name="genero" id="mujer" value="Mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        
+        <label for="Tu Dirección">7. Intereses o pasatiempos:</label>
+        <input type="checkbox" name="intereses" id="leer" value="Leer">
+        <label for="leer">Leer</label><br>
+
+        <input type="checkbox" name="intereses" id="musica" value="Música">
+        <label for="musica">Escuchar música</label><br>
+
+        <input type="checkbox" name="intereses" id="dibujar" value="Dibujar">
+        <label for="dibujar">Dibujar</label><br>
+
+        <input type="checkbox" name="intereses" id="videojuegos" value="Videojuegos">
+        <label for="videojuegos">Jugar videojuegos</label><br>
+
+        <input type="checkbox" name="intereses" id="deporte" value="Deporte">
+        <label for="deporte">Hacer deporte</label><br>
+
+        <input type="checkbox" name="intereses" id="peliculas" value="Películas/Series">
+        <label for="peliculas">Ver películas o series</label><br>
+
+        <input type="checkbox" name="intereses" id="cocinar" value="Cocinar">
+        <label for="cocinar">Cocinar</label><br>
+
+        <input type="checkbox" name="intereses" id="instrumento" value="Instrumento">
+        <label for="instrumento">Tocar un instrumento</label><br>
+        <label for="Tu Dirección">8. País de residencia:</label>
+        <input list="paises" id="pais" name="pais" placeholder="Escribe o selecciona...">
+        <datalist id="paises">
+            <option value="Afganistán">
+            <option value="Albania">
+            <option value="Alemania">
+            <option value="Andorra">
+            <option value="Angola">
+            <option value="Anguila">
+            <option value="Antigua y Barbuda">
+            <option value="Arabia Saudita">
+            <option value="Argelia">
+            <option value="Argentina">
+            <option value="Armenia">
+            <option value="Aruba">
+            <option value="Australia">
+            <option value="Austria">
+            <option value="Azerbaiyán">
+            <option value="Bahamas">
+            <option value="Bangladés">
+            <option value="Barbados">
+            <option value="Baréin">
+            <option value="Bélgica">
+            <option value="Belice">
+            <option value="Benín">
+            <option value="Bermudas">
+            <option value="Bielorrusia">
+            <option value="Birmania (Myanmar)">
+            <option value="Bolivia">
+            <option value="Bosnia y Herzegovina">
+            <option value="Botsuana">
+            <option value="Brasil">
+            <option value="Brunéi">
+            <option value="Bulgaria">
+            <option value="Burkina Faso">
+            <option value="Burundi">
+            <option value="Bután">
+            <option value="Cabo Verde">
+            <option value="Camboya">
+            <option value="Camerún">
+            <option value="Canadá">
+            <option value="Catar">
+            <option value="Chad">
+            <option value="Chile">
+            <option value="China">
+            <option value="Chipre">
+            <option value="Colombia">
+            <option value="Comoras">
+            <option value="Corea del Norte">
+            <option value="Corea del Sur">
+            <option value="Costa de Marfil">
+            <option value="Costa Rica">
+            <option value="Croacia">
+            <option value="Cuba">
+            <option value="Curazao">
+            <option value="Dinamarca">
+            <option value="Dominica">
+            <option value="Ecuador">
+            <option value="Egipto">
+            <option value="El Salvador">
+            <option value="Emiratos Árabes Unidos">
+            <option value="Eritrea">
+            <option value="Eslovaquia">
+            <option value="Eslovenia">
+            <option value="España">
+            <option value="Estados Unidos">
+            <option value="Estonia">
+            <option value="Esuatini">
+            <option value="Etiopía">
+            <option value="Filipinas">
+            <option value="Finlandia">
+            <option value="Fiyi">
+            <option value="Francia">
+            <option value="Gabón">
+            <option value="Gambia">
+            <option value="Georgia">
+            <option value="Ghana">
+            <option value="Gibraltar">
+            <option value="Granada">
+            <option value="Grecia">
+            <option value="Groenlandia">
+            <option value="Guadalupe">
+            <option value="Guam">
+            <option value="Guatemala">
+            <option value="Guayana Francesa">
+            <option value="Guinea">
+            <option value="Guinea-Bisáu">
+            <option value="Guinea Ecuatorial">
+            <option value="Guyana">
+            <option value="Haití">
+            <option value="Honduras">
+            <option value="Hong Kong">
+            <option value="Hungría">
+            <option value="India">
+            <option value="Indonesia">
+            <option value="Irak">
+            <option value="Irán">
+            <option value="Irlanda">
+            <option value="Islandia">
+            <option value="Islas Åland">
+            <option value="Islas Caimán">
+            <option value="Islas Cook">
+            <option value="Islas Feroe">
+            <option value="Islas Georgias del Sur y Sandwich del Sur">
+            <option value="Islas Malvinas">
+            <option value="Islas Marianas del Norte">
+            <option value="Islas Marshall">
+            <option value="Islas Pitcairn">
+            <option value="Islas Salomón">
+            <option value="Islas Turcas y Caicos">
+            <option value="Islas Ultramarinas Menores de Estados Unidos">
+            <option value="Islas Vírgenes Británicas">
+            <option value="Islas Vírgenes de los Estados Unidos">
+            <option value="Israel">
+            <option value="Italia">
+            <option value="Jamaica">
+            <option value="Japón">
+            <option value="Jordania">
+            <option value="Kazajistán">
+            <option value="Kenia">
+            <option value="Kirguistán">
+            <option value="Kiribati">
+            <option value="Kuwait">
+            <option value="Laos">
+            <option value="Lesoto">
+            <option value="Letonia">
+            <option value="Líbano">
+            <option value="Liberia">
+            <option value="Libia">
+            <option value="Liechtenstein">
+            <option value="Lituania">
+            <option value="Luxemburgo">
+            <option value="Macao">
+            <option value="Madagascar">
+            <option value="Malasia">
+            <option value="Malaui">
+            <option value="Maldivas">
+            <option value="Malí">
+            <option value="Malta">
+            <option value="Marruecos">
+            <option value="Martinica">
+            <option value="Mauricio">
+            <option value="Mauritania">
+            <option value="Mayotte">
+            <option value="México">
+            <option value="Micronesia">
+            <option value="Moldavia">
+            <option value="Mónaco">
+            <option value="Mongolia">
+            <option value="Montenegro">
+            <option value="Montserrat">
+            <option value="Mozambique">
+            <option value="Namibia">
+            <option value="Nauru">
+            <option value="Nepal">
+            <option value="Nicaragua">
+            <option value="Níger">
+            <option value="Nigeria">
+            <option value="Niue">
+            <option value="Noruega">
+            <option value="Nueva Caledonia">
+            <option value="Nueva Zelanda">
+            <option value="Omán">
+            <option value="Países Bajos">
+            <option value="Pakistán">
+            <option value="Palaos">
+            <option value="Palestina">
+            <option value="Panamá">
+            <option value="Papúa Nueva Guinea">
+            <option value="Paraguay">
+            <option value="Perú">
+            <option value="Polinesia Francesa">
+            <option value="Polonia">
+            <option value="Portugal">
+            <option value="Puerto Rico">
+            <option value="Reino Unido">
+            <option value="República Centroafricana">
+            <option value="República Checa">
+            <option value="República del Congo">
+            <option value="República Democrática del Congo">
+            <option value="República Dominicana">
+            <option value="Ruanda">
+            <option value="Rumanía">
+            <option value="Rusia">
+            <option value="Sahara Occidental">
+            <option value="Samoa">
+            <option value="Samoa Americana">
+            <option value="San Bartolomé">
+            <option value="San Cristóbal y Nieves">
+            <option value="San Marino">
+            <option value="San Martín (parte francesa)">
+            <option value="San Pedro y Miquelón">
+            <option value="San Vicente y las Granadinas">
+            <option value="Santa Elena, Ascensión y Tristán de Acuña">
+            <option value="Santa Lucía">
+            <option value="Santo Tomé y Príncipe">
+            <option value="Senegal">
+            <option value="Serbia">
+            <option value="Seychelles">
+            <option value="Sierra Leona">
+            <option value="Singapur">
+            <option value="Sint Maarten (parte neerlandesa)">
+            <option value="Siria">
+            <option value="Somalia">
+            <option value="Sri Lanka">
+            <option value="Sudáfrica">
+            <option value="Sudán">
+            <option value="Sudán del Sur">
+            <option value="Suecia">
+            <option value="Suiza">
+            <option value="Surinam">
+            <option value="Svalbard y Jan Mayen">
+            <option value="Tailandia">
+            <option value="Taiwán">
+            <option value="Tanzania">
+            <option value="Tayikistán">
+            <option value="Territorio Británico del Océano Índico">
+            <option value="Territorios Australes Franceses">
+            <option value="Timor Oriental">
+            <option value="Togo">
+            <option value="Tokelau">
+            <option value="Tonga">
+            <option value="Trinidad y Tobago">
+            <option value="Túnez">
+            <option value="Turkmenistán">
+            <option value="Turquía">
+            <option value="Tuvalu">
+            <option value="Ucrania">
+            <option value="Uganda">
+            <option value="Uruguay">
+            <option value="Uzbekistán">
+            <option value="Vanuatu">
+            <option value="Ciudad del Vaticano">
+            <option value="Venezuela">
+            <option value="Vietnam">
+            <option value="Wallis y Futuna">
+            <option value="Yemen">
+            <option value="Yibuti">
+            <option value="Zambia">
+            <option value="Zimbabue">
+        </datalist>
+        <br>
+        <label for="Tu Dirección">9. Área de comentarios o descripción:</label>
+        <input type="text" name="dir" id="dir">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br><br>
+    <a href="index.html"><button>Volver a index</button></a>
+</body>
+</html>
