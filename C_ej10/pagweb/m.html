@@ -1,0 +1,31 @@
+Quiero crear una página de multimedia. Voy a añadir un video nativo, un audio nativo y un iframe de youtube.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Multimedia</title>
+</head>
+<body>
+    <h1>Multimedia en HTML5</h1>
+    <hr><br>
+
+    <h2>Video Nativo</h2>
+    <video width="640" height="360" controls>
+        <source src="video/sample-video.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <h2>Audio Nativo</h2>
+    <audio controls>
+        <source src="audio/sample-audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <h2>Iframe de YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+</body>
+</html>
