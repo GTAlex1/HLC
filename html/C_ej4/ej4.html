@@ -2,54 +2,239 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Índice Estático</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice del Perfil de Proyecto</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-    <div class="contenedor-indice">
-        <h1 class="titulo-principal">INDICE</h1>
-
-        <div class="seccion-simple">INTRODUCCION</div>
-
-        <div class="fila">
-            <span class="texto">1. MARCO REFERENCIAL</span>
-            <span class="puntos"></span>
-            <span class="num">2</span>
-        </div>
-
-        <div class="sub-1">
-            <div class="fila"><span class="texto">1.1. Diagnóstico del problema</span><span class="puntos"></span><span class="num">2</span></div>
-            <div class="fila"><span class="texto">1.2. Identificación del problema</span><span class="puntos"></span><span class="num">2</span></div>
-            <div class="fila"><span class="texto">1.3. Justificación del trabajo</span><span class="puntos"></span><span class="num">4</span></div>
-            <div class="fila"><span class="texto">1.4. Objetivos</span><span class="puntos"></span><span class="num">6</span></div>
-            
-            <div class="sub-2">
-                <div class="fila"><span class="texto">1.4.1. Objetivo Práctico</span><span class="puntos"></span><span class="num">6</span></div>
-                <div class="fila"><span class="texto">1.4.2. Objetivo Teórico</span><span class="puntos"></span><span class="num">6</span></div>
-            </div>
-
-            <div class="fila"><span class="texto">1.5. Fundamento Teórico</span><span class="puntos"></span><span class="num">6</span></div>
-            
-            <div class="sub-2">
-                <div class="fila"><span class="texto">1.5.1. You Tube</span><span class="puntos"></span><span class="num">6</span></div>
-                <div class="fila"><span class="texto">1.5.2. Ventajas y desventajas del uso de You Tube</span><span class="puntos"></span><span class="num">7</span></div>
-                <div class="sub-2">
-                    <div class="fila"><span class="texto">1.5.2.1. Ventajas de YouTube</span><span class="puntos"></span><span class="num">7</span></div>
-                    <div class="fila"><span class="texto">1.5.2.2. Desventajas de YouTube</span><span class="puntos"></span><span class="num">8</span></div>
+    <div class="toc-container">
+        <h1>ÍNDICE</h1>
+        
+        <h2>INTRODUCCION</h2>
+        
+        <ol class="toc-list">
+            <li>
+                <div class="toc-item-wrapper">
+                    <a href="#marco-referencial">1. MARCO REFERENCIAL</a>
+                    <span class="page-separator"></span>
+                    <span class="page-number">2</span>
                 </div>
-                <div class="fila"><span class="texto">1.5.3. ¿Cómo integrar el uso de videos educativos...?</span><span class="puntos"></span><span class="num">8</span></div>
-            </div>
-        </div>
+                <ol>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#diagnostico">1.1. Diagnóstico del problema</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">2</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#identificacion">1.2. Identificación del problema</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">2</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#justificacion">1.3. Justificación del trabajo</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">4</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#objetivos">1.4. Objetivos</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">6</span>
+                        </div>
+                        <ol>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#obj-practico">1.4.1. Objetivo Práctico</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">6</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#obj-teorico">1.4.2. Objetivo Teórico</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">6</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#fundamento">1.5. Fundamento Teórico</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">7</span>
+                        </div>
+                        <ol>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#youtube-concepto">1.5.1. You Tube</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">7</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#youtube-ventajas">1.5.2. Ventajas y desventajas del uso de You Tube</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">8</span>
+                                </div>
+                                <ol>
+                                    <li>
+                                        <div class="toc-item-wrapper">
+                                            <a href="#ventajas-yt">1.5.2.1. Ventajas de YouTube</a>
+                                            <span class="page-separator"></span>
+                                            <span class="page-number">8</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="toc-item-wrapper">
+                                            <a href="#desventajas-yt">1.5.2.2. Desventajas de YouTube</a>
+                                            <span class="page-separator"></span>
+                                            <span class="page-number">9</span>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#integracion-yt">1.5.3. ¿Cómo integrar el uso de videos educativos de you tube en las sesiones pedagógicas?</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">9</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#plataformas-virtuales">1.5.4. Plataformas Virtuales Educativas</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">10</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#tipos-plataformas">1.5.5. Tipos de Plataformas virtuales</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">10</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#funciona-plataforma">1.5.6. ¿Cómo funciona una Plataforma virtual?</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">11</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#ayuda-plataforma">1.5.7. ¿Cómo pueden ayudar las plataformas virtuales a la educación presencial?</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">11</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#ventajas-plataformas">1.5.8. Ventajas y desventajas del uso de las plataformas virtuales:</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">14</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="toc-item-wrapper">
+                                    <a href="#integracion-plataformas">1.5.9. ¿Cómo integrar el uso de plataformas virtuales de educación en las sesiones pedagógicas?</a>
+                                    <span class="page-separator"></span>
+                                    <span class="page-number">14</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            
+            <li>
+                <div class="toc-item-wrapper">
+                    <a href="#denominacion-perfil">2. DENOMINACIÓN DEL PERFIL DE PROYECTO DE GRADO</a>
+                    <span class="page-separator"></span>
+                    <span class="page-number">16</span>
+                </div>
+            </li>
+            
+            <li>
+                <div class="toc-item-wrapper">
+                    <a href="#desarrollo-tema">3. DESARROLLO DEL TEMA</a>
+                    <span class="page-separator"></span>
+                    <span class="page-number">17</span>
+                </div>
+                <ol>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#experiencia">3.1. Experiencia</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">17</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#practica">3.2. Práctica</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">18</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#costos">3.3. Determinación de costos</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#producto">3.4. Producto</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">14</span>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            
+            <li>
+                <div class="toc-item-wrapper">
+                    <a href="#conclusiones-recomendaciones">4. CONCLUSIONES Y RECOMENDACIONES</a>
+                    <span class="page-separator"></span>
+                    <span class="page-number">14</span>
+                </div>
+                <ol>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#conclusiones">4.1. Conclusiones</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">14</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="toc-item-wrapper">
+                            <a href="#recomendaciones">4.2. Recomendaciones</a>
+                            <span class="page-separator"></span>
+                            <span class="page-number">15</span>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            
+            <li>
+                <div class="toc-item-wrapper">
+                    <a href="#bibliografia">5. BIBLIOGRAFÍA</a>
+                    <span class="page-separator"></span>
+                    <span class="page-number">16</span>
+                </div>
+            </li>
+        </ol>
 
-        <div class="fila">
-            <span class="texto">2. DENOMINACIÓN DEL PERFIL DE PROYECTO DE GRADO</span>
-            <span class="puntos"></span>
-            <span class="num">14</span>
-        </div>
-
-        <div class="seccion-simple">ANEXOS</div>
+        <h2>ANEXOS</h2>
     </div>
-
 </body>
 </html>
