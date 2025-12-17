@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.indice-container {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c5d97;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+/* Eliminar estilos de lista por defecto */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Contenedor de cada línea del índice */
+.item-indice {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+/* El título del tema */
+.titulo {
+    order: 1;
+    white-space: nowrap;
+}
+
+/* Los puntos suspensivos automáticos */
+.item-indice::after {
+    content: "";
+    flex-grow: 1;
+    order: 2;
+    border-bottom: 2px dotted #000;
+    margin: 0 5px 5px 5px;
+}
+
+/* El número de página */
+.pagina {
+    order: 3;
+    font-weight: bold;
+}
+
+/* Jerarquía de sangrías */
+.nivel-1 { padding-left: 20px; }
+.nivel-2 { padding-left: 40px; }
+.nivel-3 { padding-left: 60px; }
+
+/* Estilo para links generales como INTRODUCCION o ANEXOS */
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item-indice span {
+    font-size: 14px;
+}
