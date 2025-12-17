@@ -1,74 +1,50 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 40px;
-    line-height: 1.6;
+    background-color: #fff;
+    color: #000;
 }
 
-.indice-container {
-    background-color: white;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.contenedor-indice {
+    max-width: 700px;
+    margin: 20px auto;
 }
 
-h1 {
+.titulo-principal {
     text-align: center;
-    color: #2c5d97;
-    font-size: 24px;
-    margin-bottom: 30px;
-    text-decoration: underline;
-}
-
-/* Eliminar estilos de lista por defecto */
-ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-/* Contenedor de cada línea del índice */
-.item-indice {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 5px;
-}
-
-/* El título del tema */
-.titulo {
-    order: 1;
-    white-space: nowrap;
-}
-
-/* Los puntos suspensivos automáticos */
-.item-indice::after {
-    content: "";
-    flex-grow: 1;
-    order: 2;
-    border-bottom: 2px dotted #000;
-    margin: 0 5px 5px 5px;
-}
-
-/* El número de página */
-.pagina {
-    order: 3;
-    font-weight: bold;
-}
-
-/* Jerarquía de sangrías */
-.nivel-1 { padding-left: 20px; }
-.nivel-2 { padding-left: 40px; }
-.nivel-3 { padding-left: 60px; }
-
-/* Estilo para links generales como INTRODUCCION o ANEXOS */
-a {
+    color: #337ab7;
+    font-size: 22px;
     text-decoration: none;
-    color: black;
+    margin-bottom: 20px;
+}
+
+.seccion-simple {
     font-weight: bold;
+    margin: 10px 0;
     text-transform: uppercase;
 }
 
-.item-indice span {
+/* Estructura de la fila con puntos */
+.fila {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.puntos {
+    flex-grow: 1;
+    border-bottom: 1px dotted #000;
+    margin: 0 5px;
+}
+
+.num {
+    font-weight: normal;
+}
+
+/* Sangrías */
+.sub-1 { padding-left: 25px; }
+.sub-2 { padding-left: 25px; }
+
+/* Negritas para niveles principales */
+.fila .texto {
     font-size: 14px;
 }
