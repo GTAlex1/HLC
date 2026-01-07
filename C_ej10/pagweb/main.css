@@ -24,15 +24,26 @@ header img {
 
 header ol {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 header li {
-    margin: 10px 0;
+    background-color: #1b2030;
+    padding: 8px 14px;
+    border-radius: 8px;
 }
 
 a {
     color: #7aa2ff;
     text-decoration: none;
+}
+
+header li:hover {
+    background-color: #262c42;
 }
 
 a:hover {
