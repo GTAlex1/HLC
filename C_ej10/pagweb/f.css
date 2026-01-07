@@ -27,7 +27,8 @@ label {
     margin-top: 15px;
 }
 
-input {
+input[type="text"],
+input[type="date"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -35,6 +36,17 @@ input {
     border: none;
     background-color: #0e1016;
     color: #e5e7eb;
+}
+
+input[type="radio"] {
+    margin: 0;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
 }
 
 button {
