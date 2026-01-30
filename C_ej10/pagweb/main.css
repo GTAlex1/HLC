@@ -9,6 +9,15 @@
     display: none;
 }
 
+#login {
+    position: fixed;
+    inset: 0;
+    background-color: #0e1016;
+    z-index: 9999;
+    padding: 30px;
+}
+
+
 body {
     background-color: #0e1016;
     color: #e5e7eb;
