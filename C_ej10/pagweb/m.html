@@ -7,27 +7,44 @@
     <link rel="stylesheet" href="m.css">
 </head>
 <body>
-    <h1>Multimedia en HTML5</h1>
-    <hr><br>
 
-    <h2>Video Nativo</h2>
-    <video width="640" height="360" controls>
-        <source src="video.mp4" type="video/mp4">
-        Tu navegador no soporta la etiqueta de video.
-    </video>
+    <div id="login-container">
+        <h2>Acceso Restringido</h2>
+        <input type="text" id="usuario" placeholder="Nombre de usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="login()">Entrar</button>
+        <p id="error" style="color: #ff4d4d; margin-top: 10px;"></p>
+    </div>
 
-    <h2>Audio Nativo</h2>
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-        Tu navegador no soporta la etiqueta de audio.
-    </audio>
+    <div id="contenido" class="oculto">
+        <h1>Multimedia en HTML5</h1>
+        <hr><br>
 
-    <h2>Iframe de YouTube</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cxrLRbkOwKs?si=4jXRYeZQdvnvopwJ" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
-    <br>
-    <button><a href="main.html">Volver</a></button>
+        <h2>Video Nativo</h2>
+        <video width="640" height="360" controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <h2>Audio Nativo</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+
+        <h2>Iframe de YouTube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cxrLRbkOwKs?si=4jXRYeZQdvnvopwJ" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        
+        <br>
+        <div style="display: flex; gap: 10px;">
+            <button><a href="main.html" style="text-decoration: none;">Volver</a></button>
+            <button onclick="cerrarSesion()" style="background-color: #dc3545;">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script src="main_login.js"></script>
 </body>
 </html>
