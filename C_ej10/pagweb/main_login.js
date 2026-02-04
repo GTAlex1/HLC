@@ -1,10 +1,7 @@
 window.onload = function() {
     if (localStorage.getItem("sesion") === "si") {
-        const loginDiv = document.getElementById("login");
-        const contenidoDiv = document.querySelector(".content");
-        
-        if (loginDiv) loginDiv.style.display = "none";
-        if (contenidoDiv) contenidoDiv.style.display = "block";
+        if (document.getElementById("login")) document.getElementById("login").style.display = "none";
+        if (document.querySelector(".content")) document.querySelector(".content").style.display = "block";
     }
 }
 
@@ -17,10 +14,8 @@ function login() {
         (usuarioInput === "Manolo Muelas" && passInput === "Muelas")) {
         
         localStorage.setItem("sesion", "si");
-        
         document.getElementById("login").style.display = "none";
         document.querySelector(".content").style.display = "block";
-        
     } else {
         mensajeError.innerHTML = "Usuario o contraseña incorrectos";
     }
@@ -28,5 +23,5 @@ function login() {
 
 function cerrarSesion() {
     localStorage.removeItem("sesion");
-    location.reload(); 
+    location.reload();
 }
