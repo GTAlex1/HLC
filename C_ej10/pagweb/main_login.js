@@ -1,26 +1,32 @@
-function login() {
-    // 1. Obtenemos los valores de los inputs
-    const usuario = document.getElementById("usuario").value;
-    const password = document.getElementById("password").value;
-    const loginDiv = document.getElementById("login-container");
-    const contenidoDiv = document.getElementById("contenido");
-    const mensajeError = document.getElementById("error");
-
-    // 2. Validación de credenciales
-    if ((usuario === "Alejandro Fernández" && password === "Fernández") || 
-        (usuario === "Manolo Muelas" && password === "Muelas")) {
+window.onload = function() {
+    if (localStorage.getItem("sesion") === "si") {
+        const loginDiv = document.getElementById("login");
+        const contenidoDiv = document.querySelector(".content");
         
-        // ÉXITO: Ocultamos login y mostramos multimedia
-        loginDiv.style.display = "none";
-        contenidoDiv.classList.remove("oculto");
+        if (loginDiv) loginDiv.style.display = "none";
+        if (contenidoDiv) contenidoDiv.style.display = "block";
+    }
+}
+
+function login() {
+    var usuarioInput = document.getElementById("usuario").value;
+    var passInput = document.getElementById("password").value;
+    var mensajeError = document.getElementById("error");
+
+    if ((usuarioInput === "Alejandro Fernández" && passInput === "Fernández") || 
+        (usuarioInput === "Manolo Muelas" && passInput === "Muelas")) {
+        
+        localStorage.setItem("sesion", "si");
+        
+        document.getElementById("login").style.display = "none";
+        document.querySelector(".content").style.display = "block";
         
     } else {
-        // ERROR: Mostramos mensaje
-        mensajeError.textContent = "Usuario o contraseña incorrectos";
+        mensajeError.innerHTML = "Usuario o contraseña incorrectos";
     }
 }
 
 function cerrarSesion() {
-    // Recarga la página para resetear el estado y volver al login
-    location.reload();
+    localStorage.removeItem("sesion");
+    location.reload(); 
 }

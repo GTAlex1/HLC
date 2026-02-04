@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Web personal</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main_login.js" defer></script>
 </head>
 <body>
     <a id="top"></a>
@@ -19,11 +18,11 @@
         <p id="error" style="color:red;"></p>
     </div>
 
-
-    <div class="content">
+    <div class="content" style="display: none;">
         <header>
             <h1>Web personal de Álex</h1>
             <img src="banner.png" alt="Baner de la página">
+            <button onclick="cerrarSesion()" style="background-color: #dc3545; color: white; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; float: right;">Cerrar Sesión</button>
             <h2>Menú</h2>
             <ol>
                 <li><a href="../1.html">Enlace 1</a></li>
@@ -52,8 +51,11 @@
                 <p>Por si queréis seguirme en mis <strong>redes sociales</strong>, las dejaré por aquí...</p>
             </section>
         </main>
+        
+        <footer>Realizado por Alejandro Fernández López-Cepero &copy;</footer>
+        <a class="top" href="#top">Volver arriba</a>
     </div>
-    <footer>Realizado por Alejandro Fernández López-Cepero &copy;</footer>
-    <a class="top" href="#top">Volver arriba</a>
+
+    <script src="main_login.js"></script>
 </body>
 </html>
