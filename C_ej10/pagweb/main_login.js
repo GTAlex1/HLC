@@ -10,8 +10,8 @@ function login() {
     var passInput = document.getElementById("password").value;
     var mensajeError = document.getElementById("error");
 
-    if ((usuarioInput === "Alejandro Fernández" && passInput === "Fernández") || 
-        (usuarioInput === "Manolo Muelas" && passInput === "Muelas")) {
+    if ((usuarioInput === "Alejandro" && passInput === "Fernández") || 
+        (usuarioInput === "Manolo" && passInput === "Muela")) {
         
         localStorage.setItem("sesion", "si");
         document.getElementById("login").style.display = "none";
