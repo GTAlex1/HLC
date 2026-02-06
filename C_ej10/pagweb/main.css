@@ -5,19 +5,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Ajuste para que el login esté centrado */
+/* LOGIN */
 #login {
     position: fixed;
     inset: 0;
     background-color: #0e1016;
     z-index: 9999;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Cuadro de login similar al ejemplo del profesor */
 #login .cuadro-login {
     background-color: #151824;
     padding: 40px;
@@ -50,9 +48,9 @@
     background-color: #262c42;
 }
 
-/* Resto de tu página exactamente como estaba */
+/* CONTENIDO */
 .content {
-    display: none; /* Se activa desde JS */
+    display: none;
 }
 
 body {
@@ -100,12 +98,31 @@ a:hover {
     text-decoration: underline;
 }
 
-main {
-    max-width: 900px;
+.layout {
+    display: flex;
+    max-width: 1200px;
     margin: 40px auto;
+    gap: 40px;
     padding: 0 20px;
 }
 
+main {
+    width: 65%;
+}
+
+.imagen-lateral {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imagen-lateral img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* SECCIONES */
 section {
     background-color: #151824;
     padding: 20px;
