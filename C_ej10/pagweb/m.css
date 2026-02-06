@@ -107,12 +107,10 @@ a:hover {
     padding: 0 20px;
 }
 
-/* MAIN más a la izquierda */
 main {
     width: 65%;
 }
 
-/* Imagen a la derecha */
 .imagen-lateral {
     width: 35%;
     display: flex;
